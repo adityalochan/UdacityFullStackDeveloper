@@ -1,1 +1,32 @@
 /* add your CSS here */
+/* add your CSS here */
+.maincontainer{
+    width: 300px;
+    border: 5px solid rgb(51, 28, 136);
+    margin: auto;
+    /* Width should be fixed  */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  }
+
+.container{
+    width: auto;
+    margin: auto;
+    border: 3px solid green;
+    /* Width should be fixed  */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+  }
+  
+  .picture{
+    width: 300px;
+  }
+  
+  #fact{
+    font-style: italic;
+  }
+  
+  .ultext{
+    font-weight: bold;
+    list-style: none;
+  }
