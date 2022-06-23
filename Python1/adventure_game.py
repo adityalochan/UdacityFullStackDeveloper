@@ -23,7 +23,7 @@ def choose_option():
         print_pause("The troll attacks you!")
         print_pause("You feel a bit under-prepared for this, what with only having a tiny dagger.")
         face_troll()
-    if val == '2':
+    elif val == '2':
         print_pause("You peer cautiously into the cave.")
         print_pause("It turns out to be only a very small cave.")
         print_pause("Your eye catches a glint of metal behind a rock.")
@@ -31,6 +31,10 @@ def choose_option():
         print_pause("You discard your silly old dagger and take the sword with you.")
         print_pause("You walk back out to the field.")
         choose_option()
+    else:
+        print_pause("Invalid option. Please try again")
+        choose_option()
+
 
 def face_troll():
         val = input("Would you like to (1) fight or (2) run away?")
@@ -39,9 +43,13 @@ def face_troll():
             print_pause("but your dagger is no match for the troll.")
             print_pause("You have been defeated!")
             play_exit()
-        if val == '2': 
+        elif val == '2': 
             print_pause("You run back into the field. Luckily, you don't seem to have been followed.")
             choose_option()
+        else: 
+            print_pause("Invalid option. Please try again")
+            face_troll()
+
 
 def play_exit():
     val = input("Would you like to play again? (y/n)").lower()
